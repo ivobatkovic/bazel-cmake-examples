@@ -1,0 +1,7 @@
+# Just include the boost headers and include the regex lib...
+cc_binary(
+    name = "main",
+    srcs = ["main.cpp"],
+    deps = ["@boost//:boost-headers",
+            "@boost//:boost-regex"],
+)
