@@ -1,7 +1,7 @@
-#include<iostream>
-#include <boost/algorithm/string/replace.hpp>
+#include <boost/filesystem.hpp>
 
-int main() {
-    std::cout<< "Including boost somehow\n";
+int main()
+{
+    boost::filesystem::path path;
     return 0;
 }

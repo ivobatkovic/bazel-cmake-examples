@@ -1,12 +1,7 @@
 cc_library(
-    name = "boost-headers",
-    hdrs = glob(["include/**/*"]),
+    name = "boost-filesystem",
+    hdrs = glob(["include/boost/**/*.hpp"]),
     includes = ["include"],
-    visibility = ["//visibility:public"],
-)
-
-cc_library(
-    name = "boost-regex",
-    srcs = glob(["lib/x86_64-linux-gnu/libboost_regex.so"]),
+    srcs = glob(["lib/x86_64-linux-gnu/libboost_filesystem.so"]),
     visibility = ["//visibility:public"],
 )
